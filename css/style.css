@@ -1,0 +1,14 @@
+h1{
+	border-width: 2px;
+	border-style: solid;
+	border-color: blue;
+}
+h2{
+	border-width: 2px;
+	border-style: dotted;
+	border-color: orange;
+}
+p{
+	font-size: 24px;
+	color: red;
+}
