@@ -17,6 +17,13 @@ table {
 	border-collapse: collapse;
 }
 th, td {
-	border: 1px solid black;
-	padding: 5px;
+	border: 1px solid black; //Gives the table that table look ya know? ie the black lines
+	padding: 5px; //give the stuff space so it dont look shmushed in those black lines
+}
+button{
+	border-radius: 15px; //Rounded corners
+	box-shadow: 3px 3px 5px grey; //drop shadow
+}
+label {
+	display: block; //gives it its own line
 }

@@ -68,3 +68,89 @@
 			</tr>
 		</tbody>
 	</table>
+	
+	<h4> Web Form Example </h4>
+	
+	<form>
+		<input type="submit" value="Submit Me!">
+		<br>
+		<button type="submit">Ship Me!</button>
+		<br>
+		<input type="text" name="company" size="50"> <br>
+		<input type="number" name="points" value="100">
+		<input type="range" name="transparency" min="0" max="100" value="100"> <br>
+		<input type="email" name="user-email" placeholder="you@yourdomain.com"> <br>
+		<input type="url" name="homepage" placeholder="ex: http://domain.com" size="20"> <br>
+		<input type="tel" name="mobile" placeholder="ex: (xxx)xxx-xxxx" size="22"> <br>
+		<input type="time" name="start-time"> <br>
+		<input type="password" name="user-password" autocomplete="current-password"> <br>
+		<input type="search" name="q" placeholder="Type a search query here" size="35"> <br>
+		<input type="hidden" id="userSession" name="user-session" value="jwr274"> <br>
+		
+		<textarea name="message" rows="5">
+			Ayyyyy, I'm fucking walkin' 'ere!
+		</textarea>
+		
+		<br>
+		<fieldset>
+			<legend>
+				What's your favorite game(s)? (Check all that apply):
+			</legend>
+			
+			<label>
+				<input type="checkbox" name="game" value="Mid">Elden Ring
+			</label>
+			<label>
+				<input type="checkbox" name="game" value="Based">ZeroRanger
+			</label>
+			<label>
+				<input type="checkbox" name="game" value="Based">God of War 2 
+			</label>
+			<label>
+				<input type="checkbox" name="game" value="Mid">Call of Duty WarZone
+			</label>
+		</fieldset>
+		
+		<fieldset>
+			<legend>
+				Select your FAVORITE indie GAME:
+			</legend>
+			
+			<label>
+				<input type="radio" name="games" value="Based">ZeroRanger
+			</label>
+			<label>
+				<input type="radio" name="games" value="Based">Shovel Knight
+			</label>
+			<label>
+				<input type="radio" name="games" value="CopOut">MineCraft
+			</label>
+			<label>
+				<input type="radio" name="games" value="respectable">Spark The Electric Jester 2
+			</label>
+		</fieldset>
+		
+		
+		<form>
+			<div>
+				<label for="hair-color"> Select your hair color: </label> <br>
+				<select id="hair-color" name="hair-color">
+					<option value="black"> Black </option>
+					<option value="yellow"> Blonde </option>
+					<option value="brown"> Brunette </option>
+					<option value="red"> Red </option>
+				</select>
+			</div>
+			
+			<div>
+				<label for="hair-style"> Select your hair style </label> <br>
+				<select id="hair-style" name="hair-style" size="3">
+					<option value="wavy"> Wavy </option>
+					<option value="curly"> Curly </option>
+					<option value="straight"> Straight </option>
+				</select>
+			</div>
+		
+		</form>
+
+	</form>
