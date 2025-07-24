@@ -27,3 +27,6 @@ button{
 label {
 	display: block; //gives it its own line
 }
+a[href]{
+	color:green;
+}
