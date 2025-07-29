@@ -1,13 +1,29 @@
 h1{
 	border-width: 3px;
-	<!--border-style: solid;-->
+	/*border-style: solid;*/
 	border-color: blue;
 	color: blue;
 }
 h2{
 	border-width: 2px;
-	<!--border-style: dotted;-->
+	/*border-style: dotted;*/
 	border-color: orange;
+}
+body{
+	background: 
+		url("../graphics/Memo_Notepad_512x512.png") center/150px 
+	no-repeat,
+		url("../graphics/Idea-Website_Background.png") left top/cover;
+		border: 1px solid black;
+		height: 80vh;
+		width: 80vw;
+}
+div{
+	background: url("../graphics/Memo_Notepad_512x512.png") bottom right/150px no-repeat,
+		url("../graphics/Idea-Website_Background.png") top left/cover;
+		border: 1px solid black;
+		height: 80vh;
+		width: 80vw;
 }
 p{
 	font-size: 24px;
@@ -17,16 +33,25 @@ table {
 	border-collapse: collapse;
 }
 th, td {
-	border: 1px solid black; //Gives the table that table look ya know? ie the black lines
-	padding: 5px; //give the stuff space so it dont look shmushed in those black lines
+	border: 1px solid black; /*Gives the table that table look ya know? ie the black lines*/
+	padding: 5px; /*give the stuff space so it dont look shmushed in those black lines*/
 }
 button{
-	border-radius: 15px; //Rounded corners
-	box-shadow: 3px 3px 5px grey; //drop shadow
+	border-radius: 15px; /*Rounded corners*/
+	box-shadow: 3px 3px 5px grey; /*drop shadow*/
 }
 label {
-	display: block; //gives it its own line
+	display: block; /*gives it its own line*/
 }
 a[href]{
 	color:green;
+}
+
+a[href*="carrd"]{
+	color: firebrick;
+}
+
+:first-child{
+	color: blue;
+	font-style: italic;
 }
