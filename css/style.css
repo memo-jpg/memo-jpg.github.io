@@ -1,23 +1,45 @@
+*{
+	font-family: sans-serif;
+}
 h1{
 	border-width: 3px;
 	/*border-style: solid;*/
 	border-color: blue;
-	color: blue;
+	color: 	bisque;
 }
 h2{
 	border-width: 2px;
 	/*border-style: dotted;*/
 	border-color: orange;
+	color: pink;
+}
+.navbar{
+	display: flex;
+    position: sticky;
+    align-items: center;
+    justify-content: space-between;
+	top: 0px;
+	/*background: rgb(255 127 39);*/
+	background-blend-mode: darken;
+	background-size: cover;
+	color: white;
+	padding: 10px 20px;
+	
+}
+.navlist{
+	display: flex;
+    list-style: none;
 }
 body{
 	background: 
-		url("../graphics/Memo_Notepad_512x512.png") center/150px 
+		url("../graphics/Memo_Notepad_Eyes.png") left top/150px 
 	no-repeat,
-		url("../graphics/Idea-Website_Background.png") left top/cover;
-		border: 1px solid black;
+		url("../graphics/BG_Idea.png") left top/cover;
+		/*border: 1px solid black;*/
 		height: 80vh;
 		width: 80vw;
 }
+/*
 div{
 	background: url("../graphics/Memo_Notepad_512x512.png") bottom right/150px no-repeat,
 		url("../graphics/Idea-Website_Background.png") top left/cover;
@@ -25,6 +47,7 @@ div{
 		height: 80vh;
 		width: 80vw;
 }
+*/
 p{
 	font-size: 24px;
 	color: red;
@@ -44,14 +67,21 @@ label {
 	display: block; /*gives it its own line*/
 }
 a[href]{
-	color:green;
+	color: white;
 }
 
 a[href*="carrd"]{
 	color: firebrick;
 }
 
-:first-child{
-	color: blue;
+header:first-child{
+	color: navajowhite;
 	font-style: italic;
+}
+tr:nth-child(even){
+	background-color: cornsilk;
+}
+input[type="checkbox"]:checked + label{
+	box-shadow: 0 0 5px 1px forestgreen;
+	color: seagreen;
 }
