@@ -1,5 +1,8 @@
 *{
 	font-family: sans-serif;
+	margin: auto;
+            padding: 0;
+            box-sizing: border-box;
 }
 h1{
 	border-width: 3px;
@@ -16,6 +19,9 @@ h2{
 
 nav{
 	text-align: center;
+	display: flex;
+    justify-content: right;
+    padding: 15px 0;
 }
 /*
 .navbar{
@@ -37,22 +43,29 @@ nav{
 	align-items: center;
 }
 */
-ul {
+ul{
   display: inline-block;
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
+
 }
 li {
-  float: left;
+	padding: 10px 15px;	
+	display: inline;
+	float: center;
+	list-style: none;
+	gap: 20px;
+  
 }
 
+
 li a {
-  display: block;
+  /*display: block;*/
   padding: 8px;
   background-color: dark blue;
-  font-size: 2em;
+  font-size: 1.6em;
   font: OCR A Std;
 }
 
@@ -96,6 +109,9 @@ a[href]{
 	color: #FFD9D4;
 	font-weight: 800;
 	font: OCR A Std;
+}
+a:hover {
+	color: #f0a500;
 }
 
 a[href*="carrd"]{
