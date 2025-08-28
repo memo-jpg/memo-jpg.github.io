@@ -13,13 +13,18 @@ h2{
 	border-color: orange;
 	color: pink;
 }
+
+nav{
+	text-align: center;
+}
+/*
 .navbar{
 	display: flex;
     position: sticky;
     align-items: center;
     justify-content: space-between;
 	top: 0px;
-	/*background: rgb(255 127 39);*/
+	///*background: rgb(255 127 39);*(/
 	background-blend-mode: darken;
 	background-size: cover;
 	color: white;
@@ -29,10 +34,31 @@ h2{
 .navlist{
 	display: flex;
     list-style: none;
+	align-items: center;
 }
+*/
+ul {
+  display: inline-block;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  padding: 8px;
+  background-color: dark blue;
+  font-size: 2em;
+  font: OCR A Std;
+}
+
 body{
 	background: 
-		url("../graphics/Memo_Notepad_Eyes.png") left top/150px 
+		url("../graphics/Memo_Notepad_Eyes.png") left top/350px 
 	no-repeat,
 		url("../graphics/BG_Idea.png") left top/cover;
 		/*border: 1px solid black;*/
@@ -67,7 +93,9 @@ label {
 	display: block; /*gives it its own line*/
 }
 a[href]{
-	color: white;
+	color: #FFD9D4;
+	font-weight: 800;
+	font: OCR A Std;
 }
 
 a[href*="carrd"]{
