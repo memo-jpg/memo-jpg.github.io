@@ -17,6 +17,12 @@ h2{
 	color: pink;
 }
 
+form{
+	padding: 15px;
+	align-items: center;
+	align-self: center;
+}
+
 nav{
 	text-align: center;
 	display: flex;
