@@ -49,13 +49,14 @@ nav{
 	align-items: center;
 }
 */
-ul{
+ul.navlist{
+  font-style: italic;
   display: inline-block;
   list-style-type: none;
-  margin: 0;
+  margin: 60px 170px auto  100px; /*top right bottom left*/
   padding: 0;
   overflow: hidden;
-
+  color: red;
 }
 li {
 	padding: 10px 15px;	
@@ -65,8 +66,6 @@ li {
 	gap: 20px;
   
 }
-
-
 li a {
   /*display: block;*/
   padding: 8px;
@@ -75,11 +74,22 @@ li a {
   font: OCR A Std;
 }
 
+header{
+	display: inline-block;
+	margin-left: -140px;
+	justify-content: center;
+	background:
+		url("../graphics/Mem_Notepad-clearBG.png") left/350px no-repeat;
+	height: 40vh;
+	width: 100vw;
+}
+
 body{
 	background: 
-		url("../graphics/Memo_Notepad_Eyes.png") left top/350px 
-	no-repeat,
-		url("../graphics/BG_Idea.png") left top/cover;
+		/*url("../graphics/Memo_Notepad_Eyes.png") left top/350px 
+	no-repeat,*/
+		url("../graphics/BackGround-Idea.png") left top/cover;
+		/*url("../graphics/BG_Idea.png") left top/cover;*/
 		/*border: 1px solid black;*/
 		height: 80vh;
 		width: 80vw;
@@ -123,11 +133,12 @@ a:hover {
 a[href*="carrd"]{
 	color: firebrick;
 }
-
+/*
 header:first-child{
 	color: navajowhite;
 	font-style: italic;
 }
+*/
 tr:nth-child(even){
 	background-color: cornsilk;
 }
