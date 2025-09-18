@@ -18,6 +18,7 @@ h2{
 }
 
 form{
+	display: inline;
 	padding: 15px;
 	align-items: center;
 	align-self: center;
@@ -83,7 +84,6 @@ header{
 	height: 40vh;
 	width: 100vw;
 }
-
 body{
 	background: 
 		/*url("../graphics/Memo_Notepad_Eyes.png") left top/350px 
@@ -94,26 +94,98 @@ body{
 		height: 80vh;
 		width: 80vw;
 }
-/*
+
 div{
-	background: url("../graphics/Memo_Notepad_512x512.png") bottom right/150px no-repeat,
-		url("../graphics/Idea-Website_Background.png") top left/cover;
-		border: 1px solid black;
-		height: 80vh;
-		width: 80vw;
+	
 }
-*/
+.project{
+
+}
+.slideshow{ /* Slideshow container */
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+.slides{ /* Hide the images by default */
+	display: none;
+}
+.fade { /* Fading animation */
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+.prev, .next { /* Next & previous buttons */
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.next { /* Position the "next button" to the right */
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover { /* On hover, add a black background color with a little bit see-through */
+  background-color: rgba(0,0,0,0.8);
+}
+.dot { /* The dots/bullets/indicators */
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+  background-color: #717171;
+}
+.numbertext { /* Number text (1/3 etc) */
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
 p{
-	font-size: 24px;
-	color: red;
+	font-size: 22px;
+	color: #D9027D;
 }
-table {
+.caption{ /* Caption text */
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+.AboutMe{
+	display:inline-block;
+	background-color: rgba(255,255,255,0.5);
+
+}
+/* table {
 	border-collapse: collapse;
 }
+
 th, td {
 	border: 1px solid black; /*Gives the table that table look ya know? ie the black lines*/
-	padding: 5px; /*give the stuff space so it dont look shmushed in those black lines*/
-}
+	/*padding: 5px; /*give the stuff space so it dont look shmushed in those black lines*/
+/*} */
+
 button{
 	border-radius: 15px; /*Rounded corners*/
 	box-shadow: 3px 3px 5px grey; /*drop shadow*/
@@ -121,6 +193,7 @@ button{
 label {
 	display: block; /*gives it its own line*/
 }
+
 a[href]{
 	color: #FFD9D4;
 	font-weight: 800;
@@ -129,19 +202,21 @@ a[href]{
 a:hover {
 	color: #f0a500;
 }
-
 a[href*="carrd"]{
 	color: firebrick;
 }
+
 /*
 header:first-child{
 	color: navajowhite;
 	font-style: italic;
 }
 */
-tr:nth-child(even){
+
+/* tr:nth-child(even){
 	background-color: cornsilk;
-}
+} */
+
 input[type="checkbox"]:checked + label{
 	box-shadow: 0 0 5px 1px forestgreen;
 	color: seagreen;

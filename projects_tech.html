@@ -1,23 +1,25 @@
 <!DOCTYPE htm> 
 <html lang="en">
-
+	<head>
 		<meta charset="utf-8">
 			<title>Tech Projects</title>
-
 		<link rel="stylesheet" href="css/style.css"> <!-- This is where it's reading the CSS file-->
-
-		<nav class="navbar">
-			<u1 class="navlist">
-				<li> <a id="home" href="index.html">Home</a> </li> <!--What does this do? -Loads current page?-->
-				<li> <a id="contact" href="contactme.html">Contact Me (WIP)</a> </li> <!--Takes you to example.html... so cool wth! -->
-				<li> <a id="project_tech" href="projects_tech.html">Projects (WIP!)</a> </li>
-				<li> <a id="project_creative" href="projects_creative.html">Projects</a> </li>
-				<li> <a id="resume" href="resume.html">Resume</a> </li>
-			</u1>
-		</nav>
+	</head>
+		
 
 	<body>
-		<div>
+		<header>
+			<nav class="navbar">
+				<ul class="navlist">
+					<li> <a id="home" href="index.html">Home</a> </li> <!--What does this do? -Loads current page?-->
+					<li> <a id="contact" href="contactme.html">Contact Me (WIP)</a> </li> <!--Takes you to example.html... so cool wth! -->
+					<li> <a id="project_tech" href="projects_tech.html">Projects (WIP!)</a> </li>
+					<li> <a id="project_creative" href="projects_creative.html">Projects</a> </li>
+					<li> <a id="resume" href="resume.html">Resume</a> </li>
+				</ul>
+			</nav>
+		</header>
+		<div class="project">
 			<a href="https://github.com/MiguelIbarra2021/Braced-Game-Engine-" target="_blank">
 				<img width="480" height="235" 
 				 src="./graphics/DuckHunt3D.gif" 
@@ -25,13 +27,29 @@
 			</a>
 		</div>
 
-		<div>
+		<div class="project">
 			<a href="https://github.com/memo-jpg/Auto_Feeder/tree/main" target="_blank">
 				<img width="480" height="235" 
 				 src="./graphics/PXL_20220308_023113163.jpg" 
 				 alt="an image showing the internal wiring of the project">
 			</a>
 		</div>
+
+		<footer>
+			<script>
+				document.write("Last modified: " + document.lastModified);
+			</script>
+			
+			<div>
+				<span style="font-variant: small-caps">Requisite</span> social media links:
+			</div>
+			<!-- Splitting up the divs like this, makes it so they appear on different lines on the web page! -->
+			<div>
+				<a href="https://linktr.ee/memo.png" target="_blank">Professional Things</a> <br>
+				<a href="https://memojpg.carrd.co" target="_blank">Creative Ventures</a> <br>
+				<a href="#section1">Jump back to...</a>
+			</div>
+		</footer>
 	</body>
 
 </html>
