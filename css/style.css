@@ -105,9 +105,17 @@ div{
   max-width: 1000px;
   position: relative;
   margin: auto;
+
+	border-width: 2px;
+	border-style: dotted;
 }
 .slides{ /* Hide the images by default */
 	display: none;
+/*
+	border-width: 2px;
+	border-style: dotted;
+	border-color: orange;
+*/
 }
 .fade { /* Fading animation */
   animation-name: fade;
@@ -176,6 +184,12 @@ p{
 	display:inline-block;
 	background-color: rgba(255,255,255,0.5);
 
+}
+.TprojDesc{
+	color: #F5D7DA;
+	display:inline-block;
+	background-color: rgba(230,125,150,0.5);
+	font-family: "Lucida Console", "Courier New", monospace;
 }
 /* table {
 	border-collapse: collapse;
